@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.8" prefHeight="600.0" prefWidth="626.0" style="-fx-background-color: #FF8C00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerZakaziPokup">
+   <children>
+      <AnchorPane prefHeight="84.0" prefWidth="626.0" style="-fx-background-color: #20B2AA;">
+         <children>
+            <Text fill="#eb92ff" layoutX="264.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izube">
+               <font>
+                  <Font name="Ayuthaya" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.655448717948718" layoutY="83.0" prefHeight="517.0" prefWidth="626.0">
+        <items>
+            <SplitPane prefHeight="515.0" prefWidth="368.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.9" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FF8C00#FF8C00;">
+                     <children>
+                        <Button fx:id="naiti_button" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="321.0" layoutY="68.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="59.0" style="-fx-background-color: #78b560#78b560;" text="найти" textFill="#3c3c3c">
+                           <font>
+                              <Font name="Gill Sans" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="zapros_TextField" alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="68.0" prefHeight="36.0" prefWidth="299.0" promptText="Введите запрос" style="-fx-background-color: #c9c9c9#c9c9c9;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="145.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="304.0" fitWidth="262.0" layoutX="75.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pikters/kotest.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="351.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="avatar" accessibleRole="BUTTON" cache="true" fitHeight="36.0" fitWidth="37.0" layoutX="362.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pikters/whotcat.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" opacity="0.9" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FF8C00#FF8C00;">
+               <children>
+                  <Text layoutX="6.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Фильтры:">
+                     <font>
+                        <Font name="Georgia" size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена:">
+                     <font>
+                        <Font name="Georgia" size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ot_TextField" alignment="BOTTOM_LEFT" layoutX="93.0" layoutY="55.0" prefHeight="27.0" prefWidth="45.0" promptText="от" style="-fx-background-color: #c9c9c9#c9c9c9;" />
+                  <TextField fx:id="do_TextField" layoutX="146.0" layoutY="55.0" prefHeight="27.0" prefWidth="45.0" promptText="до" style="-fx-background-color: #c9c9c9#c9c9c9;" />
+                  <CheckBox fx:id="nravitsa_CheckBox" layoutX="30.0" layoutY="125.0" mnemonicParsing="false" text="Отметки &quot;Нравится&quot;" />
+                  <CheckBox fx:id="popular_CheckBox" layoutX="30.0" layoutY="161.0" mnemonicParsing="false" text="Популярные" />
+                  <CheckBox fx:id="dostavka_CheckBox" layoutX="30.0" layoutY="192.0" mnemonicParsing="false" text="Доставка" />
+                  <CheckBox fx:id="otzovi_CheckBox" layoutX="30.0" layoutY="228.0" mnemonicParsing="false" text="Отзовы" />
+                  <Text layoutX="20.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Расстояние от меня:">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Slider fx:id="rasstoianie_Slider" layoutX="13.0" layoutY="328.0" prefHeight="16.0" prefWidth="173.0" />
+                  <Text layoutX="7.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1km" wrappingWidth="26.41259765625" />
+                  <Text layoutX="94.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3km" />
+                  <Text layoutX="169.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5km" />
+                  <Button fx:id="primenit_button" layoutX="58.0" layoutY="397.0" mnemonicParsing="false" style="-fx-background-color: #78b560#78b560;" text="применить" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

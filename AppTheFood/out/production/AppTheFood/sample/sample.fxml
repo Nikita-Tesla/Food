@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.94" prefHeight="626.0" prefWidth="600.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="pokupatel_button" layoutX="229.0" layoutY="554.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="142.0" style="-fx-background-color: #66CDAA#66CDAA;" text="покупатель" textFill="#6d75a7">
+         <font>
+            <Font name="KufiStandardGK Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="biznesmen_button" layoutX="23.0" layoutY="554.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="142.0" style="-fx-background-color: #66CDAA;" text="бизнесмен" textFill="#6d75a7">
+         <font>
+            <Font name="KufiStandardGK Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="dalee_button" layoutX="432.0" layoutY="554.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="142.0" style="-fx-background-color: #66CDAA#66CDAA;" text="далее" textFill="#6d75a7">
+         <font>
+            <Font name="KufiStandardGK Regular" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="114.0" prefWidth="600.0" style="-fx-background-color: #20B2AA;">
+         <children>
+            <Text fill="#ffd6d6" layoutX="147.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать">
+               <font>
+                  <Font name="InaiMathi" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="39.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Привет, я приложение Izube, я помогу тебе найти вкусную и не дорогую еду около твоего дома." wrappingWidth="549.5771484375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Если ты бизнесмен, то ты можешь бесплатно опубликовать свои блюда в нашем приложении" wrappingWidth="549.5771484375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="11.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pikters/pikter.png" />
+         </image></ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="11.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pikters/pikter.png" />
+         </image></ImageView>
+      <ImageView fitHeight="244.0" fitWidth="358.0" layoutX="192.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pikters/kotik.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

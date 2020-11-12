@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.94" prefHeight="600.0" prefWidth="625.0" style="-fx-background-color: #FF8C00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerVivodNenaidenPokup">
+   <children>
+      <AnchorPane prefHeight="102.0" prefWidth="625.0" style="-fx-background-color: #20B2AA;">
+         <children>
+            <Text fill="#ffc4c4" layoutX="262.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izube">
+               <font>
+                  <Font name="Baskerville" size="45.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="avatar" accessibleRole="BUTTON" fitHeight="37.0" fitWidth="40.0" layoutX="571.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pikters/whotcat.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Naiti_Button" layoutX="501.0" layoutY="125.0" mnemonicParsing="false" opacity="0.96" prefHeight="44.0" prefWidth="80.0" style="-fx-background-color: #52d350#52d350;" text="найти" textFill="#686565">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="48.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результат поиска:">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Zapros_TextField" alignment="BOTTOM_LEFT" layoutX="26.0" layoutY="125.0" opacity="0.94" prefHeight="44.0" prefWidth="463.0" promptText="Введите запрос" style="-fx-background-color: #908e8e#908e8e;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="330.0" fitWidth="323.0" layoutX="151.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pikters/zagruzkacotik.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="135.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ой, по Вашему запросу ничего не найдено:(">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.8" prefHeight="600.0" prefWidth="626.0" style="-fx-background-color: #FF8C00;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerRegistr">
+   <children>
+      <AnchorPane prefHeight="95.0" prefWidth="626.0" style="-fx-background-color: #66CDAA;">
+         <children>
+            <Text fill="#da3ca5" layoutX="269.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Izube">
+               <font>
+                  <Font name="Baskerville" size="39.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="482.0" fitWidth="503.0" layoutX="73.0" layoutY="104.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pikters/shdet.jpg" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="pols_sogl_CheckBox" layoutX="138.0" layoutY="471.0" mnemonicParsing="false" text="принять пользовательское соглашение" textFill="#0dffff">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font>
+      </CheckBox>
+      <PasswordField fx:id="password_TextField" layoutX="147.0" layoutY="381.0" prefHeight="45.0" prefWidth="303.0" promptText="password" style="-fx-background-color: #e0dddd#e0dddd;">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+      </PasswordField>
+      <Text fill="#fdff9d" layoutX="192.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+         <font>
+            <Font name="Georgia" size="36.0" />
+         </font>
+      </Text>
+      <Button fx:id="dalee_Button" layoutX="391.0" layoutY="520.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: #7ad35e#7ad35e;" text="далее" textFill="#21474a">
+         <font>
+            <Font name="Georgia" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username_TextField" layoutX="147.0" layoutY="313.0" prefHeight="45.0" prefWidth="303.0" promptText="username" style="-fx-background-color: #e0dddd#e0dddd;">
+         <font>
+            <Font name="Courier New" size="21.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="familia_TextField" layoutX="147.0" layoutY="244.0" prefHeight="45.0" prefWidth="303.0" promptText="Фамилия" style="-fx-background-color: #e0dddd#e0dddd;">
+         <font>
+            <Font name="Courier New" size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ima_TextField" alignment="BOTTOM_LEFT" layoutX="147.0" layoutY="178.0" prefHeight="45.0" prefWidth="303.0" promptText="Имя" style="-fx-background-color: #e0dddd#e0dddd;">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
